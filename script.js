@@ -42,6 +42,27 @@ document.addEventListener('DOMContentLoaded', function () {
             description: 'Aprende a trabajar con bases de datos, APIs, fastAPI y más.',
             duration: '1:23:05',
             level: 'Avanzado'
+        },
+        {
+            id: 'tIS-1PmHAkE',
+            title: 'Lógica de programación',
+            description: 'Aprende los fundamentos de la lógica de programación.',
+            duration: '2:30:00',
+            level: 'Principiante'
+        },
+        {
+            id: 'VFgvh2R8iio',
+            title: 'React avanzado',
+            description: 'Profundiza en el desarrollo con React y aprende técnicas avanzadas.',
+            duration: '3:45:00',
+            level: 'Avanzado'
+        },
+        {
+            id: '-vMWMGM_Dys',
+            title: 'Angular avanzado',
+            description: 'Domina Angular con técnicas y patrones avanzados.',
+            duration: '4:00:00',
+            level: 'Avanzado'
         }
     ];
 
@@ -54,10 +75,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         courseCard.innerHTML = `
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/${course.id}" 
-                        title="${course.title}" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
+                <iframe 
+                    src="https://www.youtube.com/embed/${course.id}" 
+                    title="${course.title}" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
                 </iframe>
             </div>
             <div class="course-info">
